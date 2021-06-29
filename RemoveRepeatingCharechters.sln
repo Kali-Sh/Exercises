@@ -3,8 +3,6 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 16
 VisualStudioVersion = 16.0.31321.278
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RemoveRepeatingCharechters", "RemoveRepeatingCharechters\RemoveRepeatingCharechters.csproj", "{F98F75B2-7949-45BC-AD44-ED7384712ABD}"
-EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "removingRepeatingCharechters", "removingRepeatingCharechters\removingRepeatingCharechters.csproj", "{8A61C0E5-91D2-417A-8CE6-41135373A757}"
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "reversingCharechters", "reversingCharechters\reversingCharechters.csproj", "{2D69BF2C-F7B3-4C4D-95A7-1EB352A9AEE6}"
@@ -21,10 +19,6 @@ Global
 		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{F98F75B2-7949-45BC-AD44-ED7384712ABD}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{F98F75B2-7949-45BC-AD44-ED7384712ABD}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{F98F75B2-7949-45BC-AD44-ED7384712ABD}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{F98F75B2-7949-45BC-AD44-ED7384712ABD}.Release|Any CPU.Build.0 = Release|Any CPU
 		{8A61C0E5-91D2-417A-8CE6-41135373A757}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{8A61C0E5-91D2-417A-8CE6-41135373A757}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{8A61C0E5-91D2-417A-8CE6-41135373A757}.Release|Any CPU.ActiveCfg = Release|Any CPU
