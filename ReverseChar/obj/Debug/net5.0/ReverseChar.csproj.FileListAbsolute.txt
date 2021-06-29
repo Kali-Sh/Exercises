@@ -1,0 +1,15 @@
+C:\Users\kalbr\source\repos\Exercises\ReverseChar\bin\Debug\net5.0\ReverseChar.exe
+C:\Users\kalbr\source\repos\Exercises\ReverseChar\bin\Debug\net5.0\ReverseChar.deps.json
+C:\Users\kalbr\source\repos\Exercises\ReverseChar\bin\Debug\net5.0\ReverseChar.runtimeconfig.json
+C:\Users\kalbr\source\repos\Exercises\ReverseChar\bin\Debug\net5.0\ReverseChar.runtimeconfig.dev.json
+C:\Users\kalbr\source\repos\Exercises\ReverseChar\bin\Debug\net5.0\ReverseChar.dll
+C:\Users\kalbr\source\repos\Exercises\ReverseChar\bin\Debug\net5.0\ref\ReverseChar.dll
+C:\Users\kalbr\source\repos\Exercises\ReverseChar\bin\Debug\net5.0\ReverseChar.pdb
+C:\Users\kalbr\source\repos\Exercises\ReverseChar\obj\Debug\net5.0\ReverseChar.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\kalbr\source\repos\Exercises\ReverseChar\obj\Debug\net5.0\ReverseChar.AssemblyInfoInputs.cache
+C:\Users\kalbr\source\repos\Exercises\ReverseChar\obj\Debug\net5.0\ReverseChar.AssemblyInfo.cs
+C:\Users\kalbr\source\repos\Exercises\ReverseChar\obj\Debug\net5.0\ReverseChar.csproj.CoreCompileInputs.cache
+C:\Users\kalbr\source\repos\Exercises\ReverseChar\obj\Debug\net5.0\ReverseChar.dll
+C:\Users\kalbr\source\repos\Exercises\ReverseChar\obj\Debug\net5.0\ref\ReverseChar.dll
+C:\Users\kalbr\source\repos\Exercises\ReverseChar\obj\Debug\net5.0\ReverseChar.pdb
+C:\Users\kalbr\source\repos\Exercises\ReverseChar\obj\Debug\net5.0\ReverseChar.genruntimeconfig.cache

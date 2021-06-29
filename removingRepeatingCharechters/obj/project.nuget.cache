@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "trqleHQfwhps/SCMSXtjGA6Rcn6QjkeHlZJCnSHkBJX66uoWVZvIVCBdpXC+GYPwFEHM8THQ5/+KFnMIWpCIAw==",
+  "dgSpecHash": "4b4Xin//d2B49hSZr3bkSSpJMRxn95J4ivbrbXLkFJArHUKsQYu6iiHyyPrjxnoXqrwckykAGuYJBrwYnM/tzw==",
   "success": true,
-  "projectFilePath": "C:\\Users\\kalbr\\source\\repos\\removingRepeatingCharechters\\removingRepeatingCharechters\\removingRepeatingCharechters.csproj",
+  "projectFilePath": "C:\\Users\\kalbr\\source\\repos\\Exercises\\removingRepeatingCharechters\\removingRepeatingCharechters.csproj",
   "expectedPackageFiles": [],
   "logs": []
 }

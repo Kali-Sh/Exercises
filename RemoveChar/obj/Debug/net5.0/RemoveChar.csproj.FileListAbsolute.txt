@@ -1,0 +1,16 @@
+C:\Users\kalbr\source\repos\Exercises\RemoveChar\bin\Debug\net5.0\RemoveChar.exe
+C:\Users\kalbr\source\repos\Exercises\RemoveChar\bin\Debug\net5.0\RemoveChar.deps.json
+C:\Users\kalbr\source\repos\Exercises\RemoveChar\bin\Debug\net5.0\RemoveChar.runtimeconfig.json
+C:\Users\kalbr\source\repos\Exercises\RemoveChar\bin\Debug\net5.0\RemoveChar.runtimeconfig.dev.json
+C:\Users\kalbr\source\repos\Exercises\RemoveChar\bin\Debug\net5.0\RemoveChar.dll
+C:\Users\kalbr\source\repos\Exercises\RemoveChar\bin\Debug\net5.0\ref\RemoveChar.dll
+C:\Users\kalbr\source\repos\Exercises\RemoveChar\bin\Debug\net5.0\RemoveChar.pdb
+C:\Users\kalbr\source\repos\Exercises\RemoveChar\obj\Debug\net5.0\RemoveChar.csproj.AssemblyReference.cache
+C:\Users\kalbr\source\repos\Exercises\RemoveChar\obj\Debug\net5.0\RemoveChar.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\kalbr\source\repos\Exercises\RemoveChar\obj\Debug\net5.0\RemoveChar.AssemblyInfoInputs.cache
+C:\Users\kalbr\source\repos\Exercises\RemoveChar\obj\Debug\net5.0\RemoveChar.AssemblyInfo.cs
+C:\Users\kalbr\source\repos\Exercises\RemoveChar\obj\Debug\net5.0\RemoveChar.csproj.CoreCompileInputs.cache
+C:\Users\kalbr\source\repos\Exercises\RemoveChar\obj\Debug\net5.0\RemoveChar.dll
+C:\Users\kalbr\source\repos\Exercises\RemoveChar\obj\Debug\net5.0\ref\RemoveChar.dll
+C:\Users\kalbr\source\repos\Exercises\RemoveChar\obj\Debug\net5.0\RemoveChar.pdb
+C:\Users\kalbr\source\repos\Exercises\RemoveChar\obj\Debug\net5.0\RemoveChar.genruntimeconfig.cache

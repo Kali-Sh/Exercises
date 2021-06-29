@@ -5,6 +5,16 @@ VisualStudioVersion = 16.0.31321.278
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RemoveRepeatingCharechters", "RemoveRepeatingCharechters\RemoveRepeatingCharechters.csproj", "{F98F75B2-7949-45BC-AD44-ED7384712ABD}"
 EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "removingRepeatingCharechters", "removingRepeatingCharechters\removingRepeatingCharechters.csproj", "{8A61C0E5-91D2-417A-8CE6-41135373A757}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "reversingCharechters", "reversingCharechters\reversingCharechters.csproj", "{2D69BF2C-F7B3-4C4D-95A7-1EB352A9AEE6}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Simulation", "Simulation\Simulation.csproj", "{83FE434D-13A7-4F9C-8DF0-E73EEFA9276D}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "RemoveChar", "RemoveChar\RemoveChar.csproj", "{D6D5152B-85DB-4922-BB4F-FE759DC2489B}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ReverseChar", "ReverseChar\ReverseChar.csproj", "{CC4298D1-04C3-40A7-BE18-389765354BAB}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -15,6 +25,26 @@ Global
 		{F98F75B2-7949-45BC-AD44-ED7384712ABD}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{F98F75B2-7949-45BC-AD44-ED7384712ABD}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{F98F75B2-7949-45BC-AD44-ED7384712ABD}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8A61C0E5-91D2-417A-8CE6-41135373A757}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8A61C0E5-91D2-417A-8CE6-41135373A757}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8A61C0E5-91D2-417A-8CE6-41135373A757}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8A61C0E5-91D2-417A-8CE6-41135373A757}.Release|Any CPU.Build.0 = Release|Any CPU
+		{2D69BF2C-F7B3-4C4D-95A7-1EB352A9AEE6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2D69BF2C-F7B3-4C4D-95A7-1EB352A9AEE6}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2D69BF2C-F7B3-4C4D-95A7-1EB352A9AEE6}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2D69BF2C-F7B3-4C4D-95A7-1EB352A9AEE6}.Release|Any CPU.Build.0 = Release|Any CPU
+		{83FE434D-13A7-4F9C-8DF0-E73EEFA9276D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{83FE434D-13A7-4F9C-8DF0-E73EEFA9276D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{83FE434D-13A7-4F9C-8DF0-E73EEFA9276D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{83FE434D-13A7-4F9C-8DF0-E73EEFA9276D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D6D5152B-85DB-4922-BB4F-FE759DC2489B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D6D5152B-85DB-4922-BB4F-FE759DC2489B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D6D5152B-85DB-4922-BB4F-FE759DC2489B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D6D5152B-85DB-4922-BB4F-FE759DC2489B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{CC4298D1-04C3-40A7-BE18-389765354BAB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{CC4298D1-04C3-40A7-BE18-389765354BAB}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{CC4298D1-04C3-40A7-BE18-389765354BAB}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{CC4298D1-04C3-40A7-BE18-389765354BAB}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

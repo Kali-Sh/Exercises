@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\kalbr\\source\\repos\\reversingCharechters\\reversingCharechters\\reversingCharechters.csproj": {}
+    "C:\\Users\\kalbr\\source\\repos\\Exercises\\reversingCharechters\\reversingCharechters.csproj": {}
   },
   "projects": {
-    "C:\\Users\\kalbr\\source\\repos\\reversingCharechters\\reversingCharechters\\reversingCharechters.csproj": {
+    "C:\\Users\\kalbr\\source\\repos\\Exercises\\reversingCharechters\\reversingCharechters.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\kalbr\\source\\repos\\reversingCharechters\\reversingCharechters\\reversingCharechters.csproj",
+        "projectUniqueName": "C:\\Users\\kalbr\\source\\repos\\Exercises\\reversingCharechters\\reversingCharechters.csproj",
         "projectName": "reversingCharechters",
-        "projectPath": "C:\\Users\\kalbr\\source\\repos\\reversingCharechters\\reversingCharechters\\reversingCharechters.csproj",
+        "projectPath": "C:\\Users\\kalbr\\source\\repos\\Exercises\\reversingCharechters\\reversingCharechters.csproj",
         "packagesPath": "C:\\Users\\kalbr\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\kalbr\\source\\repos\\reversingCharechters\\reversingCharechters\\obj\\",
+        "outputPath": "C:\\Users\\kalbr\\source\\repos\\Exercises\\reversingCharechters\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\kalbr\\AppData\\Roaming\\NuGet\\NuGet.Config",
