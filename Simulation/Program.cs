@@ -1,213 +1,53 @@
 ﻿using System;
+using System.Collections;
 using System.Collections.Generic;
+using System.Reflection;
 using Simulation.Creatures;
 
 
 namespace Simulation
 {
-    class Program
+
+
+    
+
+    public abstract class Cell
     {
-        private static char[,] world = new char[10, 10];
-        static void Main(string[] args)
+       List<Cell>cells= new List<Cell>();
+        public Cell(int x, int y)
+        {         
+
+            for (int i = 0; i < x; i++)
+            {
+                for (int j = 0; j < y; j++)
+                {
+                    
+                    
+                    
+                }
+            }
+
+        }
+    }
+
+    public class World:Cell
+    {
+        public int X { get; set; }
+        public int Y { get; set; }
+      
+        public World(int x, int y)
+            :base(x,y)
+
         {
-            int daysPassed = 0;
-
-            int xCoordinateH;
-            int yCoordinateH;
-
-            int xCoordinateC;
-            int yCoordinateC;
-
-            List <Carnivores> ListC= new List<Carnivores>();
-            List<Herbivores> ListH = new List<Herbivores>();
-
-            // creating a random amount between 10 and 30 of herbivores and carnivores in the world           
-            Random rnd = new Random();
-            int hCount = rnd.Next(10, 31); 
-            int cCount = rnd.Next(10, 31);
-
-            int herbivoreCount = hCount;
-           
-
-
-            //random starting positions for the herbivores
-            for (int i = 0; i < hCount; i++)
-            {
-                xCoordinateH = rnd.Next(0, 10);
-                yCoordinateH = rnd.Next(0, 10);
-                
-                //checking to see if a herbivore is already on these coordinates
-                while (world[xCoordinateH, yCoordinateH] == 'h')
-                {
-                    xCoordinateH = rnd.Next(0, 10);
-                    yCoordinateH = rnd.Next(0, 10);
-                }
-
-                //creating a new herbivore object and adding it to the list
-                Herbivores herbivores = new Herbivores
-                {
-                   
-                    HPositionX=xCoordinateH,
-                    HPositionY=yCoordinateH
-                };
-                ListH.Add(herbivores);
-
-                world[xCoordinateH, yCoordinateH] = 'h';
-              
-            }
-
-            //random starting positions for the carnivores
-            //we can assume that the starting positions of the 2 species never overlap
-            for (int i = 0; i < cCount; i++)
-            {
-                xCoordinateC = rnd.Next(0, 10);
-                yCoordinateC = rnd.Next(0, 10);
-
-                while(world[xCoordinateC, yCoordinateC] == 'h' || world[xCoordinateC, yCoordinateC] == 'c')
-                {
-                    xCoordinateC = rnd.Next(0, 10);
-                    yCoordinateC = rnd.Next(0, 10);
-                }
-
-                //creating a new carnivore object and adding it to the list
-                Carnivores carnivores = new Carnivores
-                {
-                  
-                   CPositionX=xCoordinateC,
-                   CPositionY=yCoordinateC
-                };
-
-                ListC.Add(carnivores);
-                world[xCoordinateC, yCoordinateC] = 'c';
-
-            }
-          
-
-            while (true)
-            {
-
-                if (hCount == 0)
-                {
-                    Console.WriteLine($"{herbivoreCount} herbivores were killed by {cCount} carnivores after {daysPassed} days!");
-                    break;
-                }
-
-                //generating random movement for each day for herbivores
-                foreach (var herbivores in ListH)
-                {
-                    int x = herbivores.HPositionX;
-                    int y = herbivores.HPositionY;
-
-                    //if herbivore was attacked previous day and field assigned with S, now it will move and the carnivore is still there bbecause it hasnt moved yet
-                    if (world[x, y] == 'S')
-                    {
-                        world[x, y] = 'c';
-                    }
-                    else
-                    {
-                        world[x, y] = (char)0;
-                      
-                    }
-
-                    x = rnd.Next(0, 10);
-                    y = rnd.Next(0, 10);
-
-                    //herbivores wont go near carnivores, because of fear and wont go near other herbivores because of teritory
-                    while (world[x, y] == 'c' || world[x, y] == 'h')
-                    {
-                        x = rnd.Next(0, 10);
-                        y = rnd.Next(0, 10);
-                    }
-
-                    world[x, y] = 'h';
-
-                    //setting the new position for the herbivore object
-                    herbivores.HPositionX=x;
-                    herbivores.HPositionY = y;
-              
-
-                }
-
-                Visualizing(world);
-                System.Threading.Thread.Sleep(200);
-                Console.Clear();
-
-
-                //generating random movement for carnivores
-                foreach (var carnivore in ListC)
-                {
-                    int x = carnivore.CPositionX;
-                    int y = carnivore.CPositionY;
-                    
-                    world[x, y] = (char)0;
-                  
-                    x = rnd.Next(0, 10);
-                    y = rnd.Next(0, 10);
-
-
-                    //carnivores wont go near other carnivores because of teritory
-                    while (world[x, y] == 'c')
-                    {
-                        x = rnd.Next(0, 10);
-                        y = rnd.Next(0, 10);
-                    }
-
-                    if (world[x, y] == 'h')
-                    {
-                        //we have a 40% chance of survival of our herbivore when attacked by the carvinore
-                        if ((rnd.Next(5) == 1) || (rnd.Next(5) == 2))
-                        {
-                            world[x, y] = 'S';
-
-                            //setting the new position for the carnivore object
-                            carnivore.CPositionX = x;
-                            carnivore.CPositionY = y;
-                            Console.WriteLine("The herbivore SURVIVED the attack !");
-                        }
-
-                        else
-                        {
-                            Console.WriteLine("The herbivore was KILLED...");
-                            hCount--;
-                            var herbivore = ListH.Find(h => (h.HPositionX.Equals(x)) && (h.HPositionY.Equals(y)));
-                            ListH.Remove(herbivore);
-
-                           
-                            world[x, y] = 'c';
-                            carnivore.CPositionX = x;
-                            carnivore.CPositionY = y;
-                        }
-
-
-                    }
-                    else
-                    {
-                        world[x, y] = 'c';
-                        carnivore.CPositionX = x;
-                        carnivore.CPositionY = y;
-                    }
-
-
-                    
-
-                }
-                Visualizing(world);
-                System.Threading.Thread.Sleep(200);
-                Console.Clear();
-
-                daysPassed++;
-
-            }
+            this.X = x;
+            this.Y = y;
             
         }
 
-
-
-        //visualizing a 2d world with each animal at its' place
-        private static void Visualizing(char[,] world)
+        public static void Visualizing(char[,] world)
         {
- 
-            for (var i = 0; i < 10; i++)
+
+            for (var i = 0; i < 1; i++)
             {
                 for (var j = 0; j < 10; j++)
                 {
@@ -219,6 +59,252 @@ namespace Simulation
                 Console.WriteLine();
             }
         }
+    }
+
+    public abstract class Position
+    {
+        public int X { get; set; }
+        public int Y { get;  set; }
+
+
+        public Position(int x, int y)
+        {
+            if (x < 0) { throw new ArgumentOutOfRangeException(); }
+            if (y < 0) { throw new ArgumentOutOfRangeException(); }
+
+            this.X = x;
+            this.Y = y;
+
+        }
+    }
+
+    public class CurrentPosition : Position
+    {
+        public CurrentPosition(int x, int y)
+             : base(x, y)
+        {
+            base.X = x;
+            base.Y = y;
+        }
+
+    }
+
+
+
+    public abstract class Animal : Position
+    {
+        
+
+        public Animal(Position position)
+            : base(position.X, position.Y)
+
+        {
+           
+            this.X = position.X;
+            this.Y = position.Y;
+        }
+     
+        public abstract bool Eat();
+        public abstract void Move();
+        
+
+        public override bool Equals(object obj)
+        {
+
+            if ((obj == null) || (!(obj is Animal)))
+            {
+                return false;
+            }
+
+            return (this.X == ((Animal)obj).X)
+                && (this.Y == ((Animal)obj).Y);
+        }
+
+
+        public override int GetHashCode()
+        {
+            return X * 17 + Y * 23;
+        }
+
+    }
+
+
+
+    public class Herbivore:Animal
+    {
+       
+        public Herbivore(Position position)
+            : base(position)
+           
+        {
+            
+        }
+
+        public override void Move()
+        {
+           
+            Random rnd = new Random();           
+            this.X += rnd.Next(-X, 11);
+            this.Y += rnd.Next(-Y, 11);
+
+        }
+        public override bool Eat()
+        {
+            return false;
+        }
+
+       
+    }
+
+  
+
+   
+
+
+    public class Carnivore : Animal
+    {
+        public Carnivore(Position position)
+            : base(position)
+        {
+
+        }
+ 
+
+        public override bool Eat()
+        {
+            Random rnd = new Random();
+
+            //herbivore survives the attack
+            if ((rnd.Next(5) == 1) || (rnd.Next(5) == 2))
+            {
+                return true;
+            }
+
+            //herbivore is eaten
+            else
+            {
+                return false;
+            }
+        }
+
+
+        public override void Move()
+        {
+            Random rnd = new Random();          
+            this.X += rnd.Next(-X, 11);
+            this.Y += rnd.Next(-Y, 11);
+
+        }
+    }
+
+    public enum Event
+    {
+        Eat,
+        Move,
+        Die
+    }
+    
+    public class Simulation: Position
+    {
+        public List<Animal> Animals { get; set; }
+        public int Days { get; set; }
+
+       // private readonly Dictionary<Event, IDistribution> _distributions;
+
+        public Simulation(IEnumerable<Animal> animals,Position position)
+            :base(position.X, position.Y)
+        {
+            Animals = new List<Animal>(animals);
+           
+        }
+    }
+
+  
+
+
+    
+
+
+
+
+    class Program
+    {
+       // private static char[,] world = new char[10, 10];
+        static void Main(string[] args)
+        {
+           
+            
+
+            CurrentPosition current = new CurrentPosition(1, 2);
+            CurrentPosition current2 = new CurrentPosition(1, 3);
+            Carnivore carnivore1 = new Carnivore(current);
+            Carnivore carnivore2 = new Carnivore(current2);
+            Herbivore herbivore = new Herbivore(current2);
+            Herbivore herbirove2 = new Herbivore(current2);
+
+            herbirove2.GetType();
+            
+
+            List<Herbivore> test = new List<Herbivore>();
+            test.Add(herbivore);
+            test.Add(herbirove2);
+
+           if( object.Equals(carnivore1, carnivore2))
+            {
+                Console.WriteLine("da");
+            }
+
+            herbivore.Move();
+          
+               
+
+            var animals = new List<Animal>
+            {
+                new Herbivore(current),
+                new Herbivore(current2),
+                new Carnivore(current),
+                new Carnivore(current2)
+            };
+
+
+            foreach(var animal in animals)
+            {
+                animal.Move();
+            }
+
+
+
+            for(int i=0; i<animals.Count; i++)
+            {
+                animals[i].Move();     
+                for(int j=1; j<animals.Count; j++)
+                {
+                    if((object.Equals(animals[i], animals[j]) && animals[i].GetType()!=animals[j].GetType()))
+                    {
+                        if (animals[i].Equals(typeof(Carnivore)))
+                        {
+                            animals[i].Eat();
+                        }
+                        else
+                        {
+                            animals[j].Eat();
+                        }
+                    }
+                    else if(animals[i].GetType() == animals[j].GetType())
+                    {
+                        animals[i].Move();
+                    }
+                            
+                }           
+            }
+
+           
+
+        }
+
+
+        //visualizing a 2d world with each animal at its' place
+       
 
 
         
