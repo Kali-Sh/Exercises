@@ -1,0 +1,16 @@
+C:\Users\KalinaShupeva\source\repos\SocketListener\SocketListener\bin\Debug\net5.0\SocketListener.exe
+C:\Users\KalinaShupeva\source\repos\SocketListener\SocketListener\bin\Debug\net5.0\SocketListener.deps.json
+C:\Users\KalinaShupeva\source\repos\SocketListener\SocketListener\bin\Debug\net5.0\SocketListener.runtimeconfig.json
+C:\Users\KalinaShupeva\source\repos\SocketListener\SocketListener\bin\Debug\net5.0\SocketListener.runtimeconfig.dev.json
+C:\Users\KalinaShupeva\source\repos\SocketListener\SocketListener\bin\Debug\net5.0\SocketListener.dll
+C:\Users\KalinaShupeva\source\repos\SocketListener\SocketListener\bin\Debug\net5.0\ref\SocketListener.dll
+C:\Users\KalinaShupeva\source\repos\SocketListener\SocketListener\bin\Debug\net5.0\SocketListener.pdb
+C:\Users\KalinaShupeva\source\repos\SocketListener\SocketListener\obj\Debug\net5.0\SocketListener.csproj.AssemblyReference.cache
+C:\Users\KalinaShupeva\source\repos\SocketListener\SocketListener\obj\Debug\net5.0\SocketListener.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\KalinaShupeva\source\repos\SocketListener\SocketListener\obj\Debug\net5.0\SocketListener.AssemblyInfoInputs.cache
+C:\Users\KalinaShupeva\source\repos\SocketListener\SocketListener\obj\Debug\net5.0\SocketListener.AssemblyInfo.cs
+C:\Users\KalinaShupeva\source\repos\SocketListener\SocketListener\obj\Debug\net5.0\SocketListener.csproj.CoreCompileInputs.cache
+C:\Users\KalinaShupeva\source\repos\SocketListener\SocketListener\obj\Debug\net5.0\SocketListener.dll
+C:\Users\KalinaShupeva\source\repos\SocketListener\SocketListener\obj\Debug\net5.0\ref\SocketListener.dll
+C:\Users\KalinaShupeva\source\repos\SocketListener\SocketListener\obj\Debug\net5.0\SocketListener.pdb
+C:\Users\KalinaShupeva\source\repos\SocketListener\SocketListener\obj\Debug\net5.0\SocketListener.genruntimeconfig.cache
